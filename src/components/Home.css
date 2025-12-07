@@ -1,0 +1,176 @@
+div#container{
+    display: flex;
+
+
+    #cart-list{
+        margin:  0px 40px;
+        width: 70%;
+        >h2{
+        color: hsl(14, 65%, 9%);
+       margin-left: 25px;
+       margin-bottom: 0;
+        }
+        >div{
+           display: flex;
+           justify-content: space-around;
+           flex-wrap: wrap;
+           
+           div{
+            width: 30%;
+             .img{
+            width: 100%;
+            border-radius: 10px;
+            margin-top: 15px;
+           }
+           nav{
+            >button{
+                border: 1px solid hsl(14, 65%, 9%);
+                border-radius: 15px;
+                display: flex;
+                align-items: center;
+                text-align: center;
+                padding: 5px 15px;
+                color: hsl(14, 65%, 9%);
+                background-color: hsl(20, 50%, 98%);
+               margin: 0 auto;
+               position: relative;
+               top: -20px;
+               cursor: pointer;
+                >img{
+                    margin-right: 5px;
+                }
+                
+            }
+            >p{
+                margin-top: 0;
+               margin-bottom: 0;
+               color: hsl(14, 25%, 72%);
+               
+
+            }
+            
+            h4{
+                margin-top: 0;
+                margin-bottom: 0;
+                color: hsl(14, 65%, 9%);
+            }
+            label{
+                margin-top: 0;
+                color: hsl(14, 86%, 42%);
+            }
+            
+           }
+
+           
+           
+           }
+           
+        }
+        
+    }
+    #cart-checkout{
+        width: 30%;
+        margin-top: 30px;
+       >div.order{
+             background-color: #fff; 
+            padding: 10px;
+             margin-right: 50px;
+             border-radius: 10px;
+             h3{
+                color: hsl(14, 86%, 42%);
+                margin-bottom: 0;
+             
+             }
+            article{
+               text-align: center;
+               display: block;
+               p{
+                color: hsl(14, 25%, 72%);
+               }
+            }
+            
+          
+                
+             
+        }
+        >div.order-list{
+            display: flex;
+            justify-content: space-between;
+            background-color: #fff; 
+            padding: 10px;
+             margin-right: 50px;
+             border-radius: 10px;
+             margin-top: 0;
+             p{
+                color: hsl(14, 65%, 9%);
+             }
+             span{
+                margin-right: 5px;
+             }
+             .quality{
+                color: hsl(14, 86%, 42%);
+             }
+             .price{
+                color:hsl(7, 20%, 60%);
+             }
+             .quatity{
+                color:hsl(12, 20%, 44%);
+             }
+             img{
+               width: 20px;
+               height: 20px;
+                border: 1px solid black;
+                border-radius: 50%;
+                margin-top: 20px;
+                padding: 3px;
+                cursor: pointer;
+            
+                  }
+
+    }
+
+    }
+}
+
+.quaty {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+  background: #f8f8f8;
+  border-radius: 30px;
+  padding: 6px 10px;
+  width: 120px;
+  margin: 0 auto;
+}
+
+.qty-btn {
+  border: none;
+  background-color: #d87d4a;
+  color: white;
+  border-radius: 50%;
+  width: 25px;
+  height: 25px;
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: bold;
+}
+
+.qty-btn:hover {
+  background-color: #a85c32;
+}
+
+
+@media screen and (max-width: 1027px) {
+  div#container {
+    flex-direction: column;
+    #cart-list{
+      width: 90%;
+    }
+    #cart-checkout{
+       width: 90%;
+      margin: 30px auto;
+    
+    }
+  }
+}
